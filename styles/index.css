@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+#nav-menu {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: aqua;
+}
+
+.logo{
+    width: 15%;
+    height: 120px;
+    background-color: brown;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#sem-conteudo{
+    width: 8%;
+    height: 120px;
+    background-color: black;
+}
+
+#links1{
+    width: 47%;
+    background-color: #76001e;
+}
+
+#links2{
+    width: 30%;
+    background-color: #0063F7;
+}
+
+#links2 li:first-child{
+    width: 45%;
+    text-align: center;
+}
+
+#links2 li:last-child{
+    width: 35%;
+}
+
+#links2 li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-links ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-links li a {
+    color: #000;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu-links li a:hover {
+    transition: .2s ease-in-out;
+    border-bottom: 2px solid #007613;
+}
+
+.menu-links li a.txt-cor{
+    color: #fff;
+}
+
+#inicio{
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+    display: flex;
+}
+
+#texto {
+    display: block;
+    width: 60%;
+    padding: 20px;
+    height: auto;
+    background-color: #7dca17;
+}
+
+#texto p {
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: #8C1F28;
+}
+
+#inicio h1 {
+    font-size: 60px;
+    margin-top: 70px;
+    background-color: #344696;
+}
+
+.cor-verde{
+    color: #007613;
+}
+
+.cor-amarelo{
+    color: #FFD000;
+}
+
+.cor-azul{
+    color: #0063F7;
+}
+
+
+#img-inicio{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /* background-color: #96346a; */
+  
+}
+
+#img-inicio img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#fundo{
+    position: absolute;
+    width: 75%;
+    right: 0;
+    height: 100%;
+    background-color: #0063F7;
+    z-index: 1;
+}
