@@ -18,7 +18,7 @@ main{
 article{
     width: 100%;
     height: auto;
-    background-image: url("/img/fundo.svg");
+    background-image: url("../img/fundo.svg");
 }
 
 header{
