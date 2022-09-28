@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
@@ -10,18 +10,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
-main{
+main {
     width: 100%;
     height: auto;
 }
 
-article{
+article {
     width: 100%;
     height: auto;
     background-image: url("../img/fundo.svg");
 }
 
-header{
+header {
     width: 100%;
     height: auto;
 }
@@ -34,18 +34,18 @@ header{
     /* background-color: aqua; */
 }
 
-.logo{
+.logo {
     width: 20%;
     height: 120px;
     /* background-color: brown; */
 }
 
-.logo img{
+.logo img {
     width: 100%;
     height: 100%;
 }
 
-#sem-conteudo{
+#sem-conteudo {
     width: 15%;
     height: 120px;
     /* background-color: black; */
@@ -76,15 +76,16 @@ header{
     border-bottom: 2px solid #007613;
 }
 
-.menu-links li a.txt-cor{
+.menu-links li a.txt-cor {
     color: #fff;
 }
 
-.menu-links li a:hover.txt-cor{
+.menu-links li a:hover.txt-cor {
     border-bottom: 2px solid #fff;
 }
 
-#inicio{
+/* INICIO */
+#inicio {
     width: 100%;
     height: 600px;
     /* background-color: aqua; */
@@ -111,27 +112,118 @@ header{
     /* background-color: #344696; */
 }
 
-.cor-verde{
+.cor-verde {
     color: #007613;
 }
 
-.cor-amarelo{
+.cor-amarelo {
     color: #FFD000;
 }
 
-.cor-azul{
+.cor-azul {
     color: #0063F7;
 }
 
-#img-inicio{
+#img-inicio {
     position: relative;
     width: 40%;
     height: 100%;
     /* background-color: #96346a; */
 }
 
-#img-inicio img{
+#img-inicio img {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+/* RECOMENDAÇÕES */
+#Recomendacoes {
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#RecomendacoesTexto{
+    display: block;
+    width: 60%;
+    padding: 25px;
+    height: auto;
+}
+
+#RecomendacoesTexto h1{
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+#RecomendacoesTexto p{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#RecomendacoesImagem {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /* background-color: #96346a; */
+    /* margin-top: 30px; */
+    padding-top: 32px;
+}
+
+#RecomendacoesImagem img{
+    width: 100%;
+    height: 100%;
+}
+
+#Recomendacoes-colecoes{
+    display: block;
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/Recomendacoes_fundo.png);
+}
+
+#Recomendacoes-livros{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    /* width: auto;
+    height: auto; */
+    /* margin-left: 88px; */
+    margin: 0px 35px;
+}
+
+.livrosIndicados{
+    width: 283px;
+    height: 390px;
+    background-color: white;
+}
+
+.RecomendacoesTitulo1{
+    margin-left: 55px;
+    color: white;
+    font-size: 30px;   
+    padding-top: 100px;
+    text-decoration: none;
+}
+.RecomendacoesTitulo2{
+    margin-left: 55px;
+    color: white;
+    font-size: 30px;   
+    padding-top: 20px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+#Recomendacoes-videos{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+
+}
+.videoIndicados{
+    width: 360px;
+    height: 230px;
+    background-color: white;
 }
