@@ -15,6 +15,12 @@ main{
     height: auto;
 }
 
+article{
+    width: 100%;
+    height: auto;
+    background-image: url("/img/fundo.svg");
+}
+
 header{
     width: 100%;
     height: auto;
@@ -29,7 +35,7 @@ header{
 }
 
 .logo{
-    width: 18%;
+    width: 20%;
     height: 120px;
     /* background-color: brown; */
 }
@@ -40,37 +46,16 @@ header{
 }
 
 #sem-conteudo{
-    width: 5%;
+    width: 15%;
     height: 120px;
     /* background-color: black; */
 }
 
-#links1{
-    width: 47%;
-    /* background-color: #76001e; */
-}
-
-#links2{
-    width: 30%;
-    background-color: #0063F7;
-}
-
-#links2 li:first-child{
-    width: 45%;
-    text-align: center;
-}
-
-#links2 li:last-child{
-    width: 35%;
-}
-
-#links2 li a:hover{
-    border-bottom: 2px solid #fff;
-}
-
 .menu-links {
+    width: 65%;
     display: flex;
     justify-content: space-evenly;
+    /* background-color: aqua; */
 }
 
 .menu-links ul {
@@ -93,6 +78,10 @@ header{
 
 .menu-links li a.txt-cor{
     color: #fff;
+}
+
+.menu-links li a:hover.txt-cor{
+    border-bottom: 2px solid #fff;
 }
 
 #inicio{
@@ -134,27 +123,15 @@ header{
     color: #0063F7;
 }
 
-
 #img-inicio{
     position: relative;
     width: 40%;
     height: 100%;
     /* background-color: #96346a; */
-  
 }
 
 #img-inicio img{
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 2;
-}
-
-#fundo{
-    position: absolute;
-    width: 75%;
-    right: 0;
-    height: 100%;
-    background-color: #0063F7;
-    z-index: 1;
 }
