@@ -238,21 +238,17 @@ header {
 .btn-saiba-mais{
     width: 100%;
     height: auto;
-    text-align: center;
     /* background-color: #000; */
-}
-
-.btn-saiba-mais div{
-    width: 200px;
-    background-color: #007613;
+    text-align: center;
     padding: 20px;
-    margin: auto;
 }
 
-.btn-saiba-mais div a{
+.btn-saiba-mais a{
+    background-color: #007613;
     color: #fff;
+    padding: 20px 60px;
 }
 
-.btn-saiba-mais div a:hover{
-    background-color: #76000067;
+.btn-saiba-mais a:hover {
+    background-color: #007614be;
 }
