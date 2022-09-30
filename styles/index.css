@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('timeline1.css');
+@import url('quiz.css');
 
 * {
     padding: 0;
@@ -243,14 +244,14 @@ header {
     height: auto;
     /* background-color: #000; */
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     margin: 50px 0px;
 }
 
 #botao {
     position: relative;
     text-transform: uppercase;
-    padding: 20px 50px;
+    padding: 18px 50px;
     text-align: center;
     color: #fff;
     border: 3px solid #007613;
@@ -284,4 +285,10 @@ header {
 #botao:hover::after {
     width: calc(100% + 27px);
     height: calc(100% + 27px);
+}
+
+#sessao-quiz{
+    width: 100%;
+    height: auto;
+    /* background-color: #FFD000; */
 }

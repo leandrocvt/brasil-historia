@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('index.css');
+
+#quiz{
+    font-size: 16px;
+}
+
+.faded {
+    color: #000;
+    margin: 10px 0px;
+}
+
+#quiz-counter {
+    color: #0063F7;
+    margin: 10px 0px;
+}
+
+.quiz-container {
+    padding: 0.25em;
+    max-width: 650px;
+    margin: 1em auto;
+}
+
+.quiz-container a {
+    text-decoration: none;
+    color: #000;
+}
+
+#quiz-header,
+#quiz-start-screen,
+#quiz-results-screen,
+#quiz-counter {
+    text-align: center;
+    font-size: 20px;
+}
+
+#quiz-header h4{
+    font-size: 40px;
+}
+
+#questions {
+    margin-top: 2.5em;
+}
+
+.question {
+    font-size: 1.25em;
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answers li:not(:first-child) {
+    margin-top: 1.25em;
+}
+
+.answers a,
+#quiz-controls {
+    background: #f3f3f3;
+    border: .1em solid #efefef;
+}
+
+.answers a {
+    display: block;
+    padding: 0.75em 1em;
+    margin-bottom: 0.5em;
+}
+
+.answers a.correct {
+    background: #31b72f;
+    border-color: #2db12b;
+}
+
+.answers a.incorrect {
+    background: #e64646;
+    border-color: #e04040;
+}
+
+.answers a.correct,
+.answers a.incorrect {
+    color: #fff;
+}
+
+#quiz-controls {
+    color: #111;
+    padding: 1.25em 1em;
+    text-align: center;
+    margin-top: 3.5em;
+}
+
+#quiz-response {}
+
+#quiz-results {
+    font-size: 1.25em;
+}
+
+#quiz-buttons a,
+.quiz-container .quiz-button,
+.answers a,
+#quiz-controls {
+    margin: 10px 0px;
+}
+
+#quiz-buttons a,
+.quiz-container .quiz-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    min-width: 8em;
+}
+
+.quiz-button,
+#quiz-buttons a {
+    color: #fdfdfd !important;
+    background: #0063F7;
+    /* border: .1em solid #0063F7; */
+    transition: 0.2s ease;
+}
+
+.quiz-button:hover,
+#quiz-buttons a:hover {
+    background: #31acf5;
+    /* border: .1em solid #34aaef; */
+    transition: 0.2s ease;
+}
+
+/* Quiz State Overrides */
+
+
+.quiz-results-state #quiz-buttons a {
+    background: #88449a;
+    border-color: #864098;
+    margin: 1em
+}
