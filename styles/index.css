@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('timeline1.css');
+
 * {
     padding: 0;
     margin: 0;
@@ -137,7 +138,7 @@ header {
     height: 100%;
 }
 
-.titulos{
+.titulos {
     text-align: center;
     font-size: 25px;
     margin-top: 20px;
@@ -152,19 +153,19 @@ header {
     display: flex;
 }
 
-#RecomendacoesTexto{
+#RecomendacoesTexto {
     display: block;
     width: 60%;
     padding: 25px;
     height: auto;
 }
 
-#RecomendacoesTexto h1{
+#RecomendacoesTexto h1 {
     font-size: 60px;
     margin-top: 50px;
 }
 
-#RecomendacoesTexto p{
+#RecomendacoesTexto p {
     margin-top: 50px;
     font-size: 20px;
 }
@@ -178,19 +179,19 @@ header {
     padding-top: 32px;
 }
 
-#RecomendacoesImagem img{
+#RecomendacoesImagem img {
     width: 100%;
     height: 100%;
 }
 
-#Recomendacoes-colecoes{
+#Recomendacoes-colecoes {
     display: block;
     width: 100%;
     height: 900px;
     background-image: url(../img/Recomendacoes_fundo.png);
 }
 
-#Recomendacoes-livros{
+#Recomendacoes-livros {
     /* background-color: red; */
     display: flex;
     justify-content: space-around;
@@ -201,54 +202,86 @@ header {
     margin: 0px 35px;
 }
 
-.livrosIndicados{
+.livrosIndicados {
     width: 283px;
     height: 390px;
     background-color: white;
 }
 
-.RecomendacoesTitulo1{
+.RecomendacoesTitulo1 {
     margin-left: 55px;
     color: white;
-    font-size: 30px;   
+    font-size: 30px;
     padding-top: 100px;
     text-decoration: none;
 }
-.RecomendacoesTitulo2{
+
+.RecomendacoesTitulo2 {
     margin-left: 55px;
     color: white;
-    font-size: 30px;   
+    font-size: 30px;
     padding-top: 20px;
     text-decoration: none;
     margin-bottom: 15px;
 }
 
-#Recomendacoes-videos{
+#Recomendacoes-videos {
     display: flex;
     justify-content: space-around;
     margin-left: 10px;
 
 }
-.videoIndicados{
+
+.videoIndicados {
     width: 360px;
     height: 230px;
     background-color: white;
 }
 
-.btn-saiba-mais{
+.btn-saiba-mais {
     width: 100%;
     height: auto;
     /* background-color: #000; */
     text-align: center;
     padding: 20px;
+    margin: 50px 0px;
 }
 
-.btn-saiba-mais a{
-    background-color: #007613;
+#botao {
+    position: relative;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    text-align: center;
     color: #fff;
-    padding: 20px 60px;
+    border: 3px solid #007613;
+    /* font-size: 20px;  */
+    background-color: #007613;
 }
 
-.btn-saiba-mais a:hover {
-    background-color: #007614be;
+#botao::before,
+#botao::after {
+    content: " ";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: all .5s;
+}
+
+#botao::before {
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+
+#botao::after {
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+
+#botao:hover::before,
+#botao:hover::after {
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
 }
