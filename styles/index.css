@@ -287,8 +287,171 @@ header {
     height: calc(100% + 27px);
 }
 
-#sessao-quiz{
+#sessao-quiz {
     width: 100%;
     height: auto;
     /* background-color: #FFD000; */
+}
+
+/* SOBRE NÓS */
+#sobre_nos {
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#sobre_texto {
+    width: 60%;
+    height: auto;
+    display: block;
+}
+
+#sobre_texto h1 {
+    font-size: 60px;
+}
+
+#sobre_texto p {
+    font-size: 20px;
+    margin-top: 50px;
+    width: 700px;
+}
+
+#sobre_texto h2 {
+    font-size: 40px;
+}
+
+#sobre_texto input {
+    padding: 8px;
+    border: none;
+    font-size: 18px;
+    border-bottom: 2px solid #6E716F;
+    width: 300px;
+}
+
+#sobre_texto input[type=button] {
+    background-color: #0063F7;
+    padding: 20px 40px;
+    width: auto;
+    margin-top: 30px;
+    color: white;
+}
+
+#sobre_texto input[type=button]:active {
+    padding: 19px 38px;
+    background-color: #0245A9;
+}
+
+#sobre_imagem {
+    position: relative;
+    width: 40%;
+    height: auto;
+    padding-top: 160px;
+}
+
+#sobre_imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+/*======================== COMENTÁRIOS ========================= */
+
+#comentarios {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.comentario_container {
+    /* background-color: red; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+.comentario {
+    /* background-color: green; */
+    width: 410px;
+    height: 450px;
+    box-shadow: 0px 0px 12px 7px #ccc;
+}
+
+.comentario_foto {
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.comentario_texto {
+    font-size: 25px;
+}
+
+.comentario_texto p {
+    padding: 0px 25px;
+}
+
+/* =-========================== RODAPÉ ========================= */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-image: url(./imagens.somos/rodape.png);
+    text-align: center;
+}
+
+.footer_imagem {
+    width: 297px;
+    height: 182px;
+    /* background-color:red; */
+    margin-left: 550px;
+}
+
+.footer_imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer_texto1 {
+    width: 299px;
+    height: auto;
+    /* background-color:red; */
+    margin-left: 530px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer_container {
+    width: 180px;
+    height: auto;
+    margin-left: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+.footer_fotos img {
+    width: auto;
+    ;
+    height: auto;
+    ;
+}
+
+
+.footer_fotos a {
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: white;
+    /* padding-top:20px; */
+    padding: 13px 15px 5px 15px;
+}
+
+.footer_texto2 {
+    color: white;
+    margin-left: 60px;
+    padding-bottom: 0px;
 }
