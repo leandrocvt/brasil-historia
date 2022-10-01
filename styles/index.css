@@ -295,7 +295,7 @@ header {
 
 /* SOBRE NÓS */
 #sobre_nos {
-    /* background-color: red; */
+    /* background-color: rgb(45, 100, 219); */
     width: 100%;
     height: auto;
     display: flex;
@@ -308,38 +308,47 @@ header {
 }
 
 #sobre_texto h1 {
-    font-size: 60px;
+    font-size: 55px;
+    padding-left: 20px;
+    margin-top: 20px;
+    /* background-color: #000; */
 }
 
 #sobre_texto p {
     font-size: 20px;
-    margin-top: 50px;
+    margin: 20px 20px;
     width: 700px;
+    /* background-color: #15f700; */
 }
 
-#sobre_texto h2 {
-    font-size: 40px;
+#sobre_texto h5 {
+    font-size: 35px;
+    padding-left: 20px;
+}
+
+#sobre_texto form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 #sobre_texto input {
+    width: 60%;
     padding: 8px;
     border: none;
     font-size: 18px;
     border-bottom: 2px solid #6E716F;
-    width: 300px;
+    margin: 10px 0px;
 }
 
-#sobre_texto input[type=button] {
+#sobre_texto .btn_enviar {
+    width: 25%;
+    padding: 10px;
+    color: #fff;
+    font-size: 25px;
+    border-bottom: none;
     background-color: #0063F7;
-    padding: 20px 40px;
-    width: auto;
-    margin-top: 30px;
-    color: white;
-}
-
-#sobre_texto input[type=button]:active {
-    padding: 19px 38px;
-    background-color: #0245A9;
+    cursor: pointer;
 }
 
 #sobre_imagem {
@@ -347,6 +356,7 @@ header {
     width: 40%;
     height: auto;
     padding-top: 160px;
+    /* background-color: #007613; */
 }
 
 #sobre_imagem img {
@@ -357,24 +367,30 @@ header {
 /*======================== COMENTÁRIOS ========================= */
 
 #comentarios {
+    /* background-color: rgb(0, 255, 64); */
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 30px;
+    margin: 35px 0px 50px 0px;
+}
+
+#comentarios h1 {
+    font-size: 35px;
+    margin: 20px 0px;
+    /* background-color: #000; */
 }
 
 .comentario_container {
-    /* background-color: red; */
     width: 100%;
-    height: 500px;
+    height: auto;
     display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
+    justify-content: space-evenly;
+    /* background-color: #0063F7; */
 }
 
 .comentario {
     /* background-color: green; */
-    width: 410px;
-    height: 450px;
+    width: 30%;
+    height: 500px;
+    margin: 20px 0px;
     box-shadow: 0px 0px 12px 7px #ccc;
 }
 
@@ -382,8 +398,8 @@ header {
     /* background-color: red; */
     width: 100%;
     height: auto;
-    padding-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 30px;
+    margin-bottom: 30px;
 }
 
 .comentario_texto {
@@ -399,15 +415,16 @@ header {
 footer {
     width: 100%;
     height: auto;
-    background-image: url(./imagens.somos/rodape.png);
+    background-image: url('../img/img-rodape.svg');
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer_imagem {
-    width: 297px;
-    height: 182px;
+    width: 100%;
+    height: 130px;
     /* background-color:red; */
-    margin-left: 550px;
 }
 
 .footer_imagem img {
@@ -416,42 +433,43 @@ footer {
 }
 
 .footer_texto1 {
-    width: 299px;
+    width: 100%;
     height: auto;
-    /* background-color:red; */
-    margin-left: 530px;
+    /* background-color:rgb(0, 217, 255); */
     color: white;
-    margin-bottom: 20px;
+}
+
+.footer_texto1 div{
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    /* background-color: #000; */
+    margin-bottom: 10px;
 }
 
 .footer_container {
-    width: 180px;
+    width: 100%;
     height: auto;
-    margin-left: 600px;
+    margin: auto;
+    /* background-color: blueviolet; */
+}
+
+#icons{
+    width: 10%;
+    height: 50px;
+    margin: auto;
+    /* background-color: #007613; */
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    justify-content: space-around;
 }
 
-
-.footer_fotos img {
-    width: auto;
-    ;
-    height: auto;
-    ;
-}
-
-
-.footer_fotos a {
-    border: 1px solid white;
-    border-radius: 100%;
-    background-color: white;
-    /* padding-top:20px; */
-    padding: 13px 15px 5px 15px;
+#icons img {
+    width: 100%;
+    height: 100%;
 }
 
 .footer_texto2 {
     color: white;
-    margin-left: 60px;
-    padding-bottom: 0px;
+    font-size: 15px;
+    margin-bottom: 20px;
 }
