@@ -17,7 +17,7 @@ main {
     height: auto;
 }
 
-article {
+article{
     width: 100%;
     height: auto;
     background-image: url("../img/fundo.svg");
@@ -33,7 +33,7 @@ header {
     width: 100%;
     height: auto;
     display: flex;
-
+    justify-content: space-between;
 }
 
 .logo {
@@ -84,6 +84,21 @@ header {
 
 .menu-links li a:hover.txt-cor {
     border-bottom: 2px solid #fff;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+    margin: auto;
+    height: 50%;
+    /* background-color: aqua; */
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: #007613;
+    margin: 8px;
 }
 
 /* INICIO */
@@ -402,7 +417,7 @@ header {
     margin-bottom: 30px;
 }
 
-.comentario_foto img{
+.comentario_foto img {
     width: 100%;
     height: 100%;
 }
@@ -421,6 +436,7 @@ footer {
     width: 100%;
     height: auto;
     background-image: url('../img/img-rodape.svg');
+    background-repeat: no-repeat;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -444,7 +460,7 @@ footer {
     color: white;
 }
 
-.footer_texto1 div{
+.footer_texto1 div {
     width: 25%;
     margin: auto;
     text-align: center;
@@ -459,7 +475,7 @@ footer {
     /* background-color: blueviolet; */
 }
 
-#icons{
+#icons {
     width: 10%;
     height: 50px;
     margin: auto;
@@ -479,39 +495,38 @@ footer {
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width:576px)
+/* RESPONSIVO CELULAR */
+@media only screen and (max-width:576px) {
 
-{
+    body {
+        width: 100%;
+        height: auto;
+    }
 
-main {
-    width: 100%;
-    height: auto;
-}
+    #nav-menu {
+        margin: auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
 
-#nav-menu {
-    margin: auto;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-   
-}
+    }
 
-.logo {
-    width: 100%;
-    height: auto;
-    align-items: center;
-   /* background-color: brown; */
-  
-}
+    .logo {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        /* background-color: brown; */
 
-.logo img {
-    width: 50%;
-    height: 60%;
-    margin-left: 25%;
-}
+    }
 
-.menu-links {
+    .logo img {
+        width: 50%;
+        height: 60%;
+        margin-left: 25%;
+    }
+
+    /* .menu-links {
     width: 100%;
     height: auto;
     flex-direction: column;
@@ -542,166 +557,275 @@ main {
 
 .menu-links li a:hover.txt-cor {
     border-bottom: 2px solid #000;
+} */
+
+    #img-inicio {
+        position: relative;
+        width: 100%;
+        height: 70%;
+        margin-top: 15%;
+        /* background-color: #96346a; */
+    }
+
+    #img-inicio img {
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        margin-top: 15%;
+    }
+
+    #texto {
+        display: block;
+        width: 60%;
+        padding: 25px;
+        height: auto;
+        /* background-color: #7dca17; */
+    }
+
+    #texto p {
+        margin-top: 50px;
+        font-size: 15px;
+        /* background-color: #8C1F28; */
+    }
+
+    #inicio h1 {
+        font-size: 30px;
+
+        /* background-color: #344696; */
+    }
+
+    #inicio h1 {
+        font-size: 30px;
+        /* background-color: #344696; */
+    }
+
+    #Recomendacoes {
+        /* background-color: red; */
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    #Recomendacoes-colecoes {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-image: url(../img/Recomendacoes_fundo.png);
+    }
+
+
+    #RecomendacoesTexto {
+        display: block;
+        width: 60%;
+        padding: 25px;
+        height: auto;
+    }
+
+    #RecomendacoesTexto h1 {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    #RecomendacoesTexto p {
+        margin-top: 40px;
+        font-size: 15px;
+
+    }
+
+    #Recomendacoes-livros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .livrosIndicados {
+        width: 283px;
+        height: 390px;
+        margin-top: 20px;
+        background-color: white;
+    }
+
+    .RecomendacoesTitulo1 {
+        margin-left: 55px;
+        color: white;
+        font-size: 30px;
+        padding-top: 100px;
+        text-decoration: none;
+    }
+
+    .RecomendacoesTitulo2 {
+        margin-left: 55px;
+        color: white;
+        font-size: 30px;
+        padding-top: 20px;
+        text-decoration: none;
+        margin-bottom: 15px;
+    }
+
+    #Recomendacoes-videos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .videoIndicados {
+        width: 283px;
+        height: 390px;
+        margin-top: 20px;
+        background-color: white;
+    }
+
+    #tamanho {
+        height: auto;
+    }
+
+    #sobre_nos {
+        /* background-color: rgb(45, 100, 219); */
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    #sobre_texto {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #sobre_texto h1 {
+        font-size: 30px;
+        /* padding-left: 20px; */
+        margin-top: 20px;
+        /* background-color: #000; */
+    }
+
+    #sobre_texto p {
+        font-size: 15px;
+        margin: 20px 20px;
+        width: 100%;
+        /* background-color: #15f700; */
+    }
+
+    #sobre_texto h5 {
+        font-size: 30px;
+        padding-left: 20px;
+        margin-top: 10%;
+    }
+
+    #sobre_texto .btn_enviar {
+        width: 50%;
+        padding: 10px;
+        color: #fff;
+        font-size: 25px;
+        border-bottom: none;
+        background-color: #0063F7;
+        cursor: pointer;
+    }
+
+    #comentarios h1 {
+        font-size: 30px;
+        /* background-color: #000; */
+    }
+
+    .comentario_texto {
+        font-size: 11px;
+    }
+
+    footer {
+        background-image: none;
+        background-color: #000;
+    }
 }
 
-#img-inicio {
-    position: relative;
-    width: 100%;
-    height: 70%;
-    margin-top: 15%;
-    /* background-color: #96346a; */
+@media only screen and (max-width:999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    article{
+        background-image: none;
+    }
+
+    .menu-links {
+        position: absolute;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #007613;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .menu-links ul {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    .menu-links li {
+        opacity: 0;
+    }
+
+    .menu-links ul li a {
+        color: #fff;
+    }
+
+    #sem-conteudo{
+        width: 70%;
+    }
+
+    .mobile-menu {
+        display: block;
+        z-index: 2;
+        margin: auto;
+    }
+
+    .menu-links.active {
+        transform: translateX(0);
+    }
+    
+    .logo img{
+        margin-left: 10px;
+    }
+
+    #inicio{
+        /* background-color: tomato; */
+        flex-direction: column;
+    }
+
+    #texto{
+        width: 100%;
+        text-align: center;
+    }
+
+    #img-inicio{
+        display: none;
+    }
 }
 
-#img-inicio img {
-    position: absolute;
-    width: 100%;
-    height:70%;
-    margin-top: 15%;
-}
-#texto {
-    display: block;
-    width: 60%;
-    padding: 25px;
-    height: auto;
-    /* background-color: #7dca17; */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-#texto p {
-    margin-top: 50px;
-    font-size: 15px;
-    /* background-color: #8C1F28; */
-}
-#inicio h1 {
-    font-size: 30px;
-  
-    /* background-color: #344696; */
-}#inicio h1 {
-    font-size: 30px;
-    /* background-color: #344696; */
-}
-#Recomendacoes {
-    /* background-color: red; */
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-#Recomendacoes-colecoes {
-    display: block;
-    width: 100%;
-    height: auto;
-    background-image: url(../img/Recomendacoes_fundo.png);
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+    background-color: #FFD000;
 }
 
-
-#RecomendacoesTexto {
-    display: block;
-    width: 60%;
-    padding: 25px;
-    height: auto;
+.mobile-menu.active .line2 {
+    opacity: 0;
 }
 
-#RecomendacoesTexto h1 {
-    font-size: 25px;
-    margin-top: 50px;
-}
-#RecomendacoesTexto p {
-    margin-top: 40px;
-    font-size: 15px;
-
-}
-#Recomendacoes-livros {
- 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.livrosIndicados {
-    width: 283px;
-    height: 390px;
-    margin-top: 20px;
-    background-color: white;
-}
-
-.RecomendacoesTitulo1 {
-    margin-left: 55px;
-    color: white;
-    font-size: 30px;
-    padding-top: 100px;
-    text-decoration: none;
-}
-
-.RecomendacoesTitulo2 {
-    margin-left: 55px;
-    color: white;
-    font-size: 30px;
-    padding-top: 20px;
-    text-decoration: none;
-    margin-bottom: 15px;
-}
-
-#Recomendacoes-videos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.videoIndicados {
-    width: 283px;
-    height: 390px;
-    margin-top: 20px;
-    background-color: white;
-}
-#tamanho{
-    height: auto;
-}
-
-#sobre_nos {
-    /* background-color: rgb(45, 100, 219); */
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-
-#sobre_texto {
-    width: 60%;
-    height: auto;
-    display: block;
-}
-
-#sobre_texto h1 {
-    font-size: 30px;
-    padding-left: 20px;
-    margin-top: 20px;
-    /* background-color: #000; */
-}
-
-#sobre_texto p {
-    font-size: 15px;
-    margin: 20px 20px;
-    width: 700px;
-    /* background-color: #15f700; */
-}
-#sobre_texto h5 {
-    font-size: 30px;
-    padding-left: 20px;
-    margin-top: 10%;
-}
-#sobre_texto .btn_enviar {
-    width: 50%;
-    padding: 10px;
-    color: #fff;
-    font-size: 25px;
-    border-bottom: none;
-    background-color: #0063F7;
-    cursor: pointer;
-}
-#comentarios h1 {
-    font-size: 30px;
-    /* background-color: #000; */
-}
-.comentario_texto {
-    font-size: 11px;
-}
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+    background-color: #FFD000;
 }
