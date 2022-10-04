@@ -17,10 +17,12 @@ main {
     height: auto;
 }
 
-article{
+article {
     width: 100%;
     height: auto;
     background-image: url("../img/fundo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -211,10 +213,6 @@ header {
     /* background-color: red; */
     display: flex;
     justify-content: space-around;
-    padding-top: 20px;
-    /* width: auto;
-    height: auto; */
-    /* margin-left: 88px; */
     margin: 0px 35px;
 }
 
@@ -245,7 +243,6 @@ header {
     display: flex;
     justify-content: space-around;
     margin-left: 10px;
-
 }
 
 .videoIndicados {
@@ -254,6 +251,7 @@ header {
     background-color: white;
 }
 
+/* TOPO */
 .btn-saiba-mais {
     width: 100%;
     height: auto;
@@ -437,6 +435,7 @@ footer {
     height: auto;
     background-image: url('../img/img-rodape.svg');
     background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -496,254 +495,13 @@ footer {
 }
 
 /* RESPONSIVO CELULAR */
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:480px) {
 
-    body {
-        width: 100%;
-        height: auto;
-    }
-
-    #nav-menu {
-        margin: auto;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .logo {
-        width: 100%;
-        height: auto;
-        align-items: center;
-        /* background-color: brown; */
-
-    }
-
-    .logo img {
-        width: 50%;
-        height: 60%;
-        margin-left: 25%;
-    }
-
-    /* .menu-links {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-   
-}
-
-.menu-links li a:hover {
-    transition: .2s ease-in-out;
-    background-color: #0063F7;
-}
-
-.menu-links li a {
-    color: #000;
-    font-size: 16px;
-    border-bottom: 2px solid rgba(0, 0, 255, 0.604);
-}
-
-.menu-links ul {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-   
-}
-
-.menu-links li a.txt-cor {
-    color: #000;
-}
-
-.menu-links li a:hover.txt-cor {
-    border-bottom: 2px solid #000;
-} */
-
-    #img-inicio {
-        position: relative;
-        width: 100%;
-        height: 70%;
-        margin-top: 15%;
-        /* background-color: #96346a; */
-    }
-
-    #img-inicio img {
-        position: absolute;
-        width: 100%;
-        height: 70%;
-        margin-top: 15%;
-    }
-
-    #texto {
-        display: block;
-        width: 60%;
-        padding: 25px;
-        height: auto;
-        /* background-color: #7dca17; */
-    }
-
-    #texto p {
-        margin-top: 50px;
-        font-size: 15px;
-        /* background-color: #8C1F28; */
-    }
-
-    #inicio h1 {
-        font-size: 30px;
-
-        /* background-color: #344696; */
-    }
-
-    #inicio h1 {
-        font-size: 30px;
-        /* background-color: #344696; */
-    }
-
-    #Recomendacoes {
-        /* background-color: red; */
-        width: 100%;
-        height: auto;
-        display: flex;
-    }
-
-    #Recomendacoes-colecoes {
-        display: block;
-        width: 100%;
-        height: auto;
-        background-image: url(../img/Recomendacoes_fundo.png);
-    }
-
-
-    #RecomendacoesTexto {
-        display: block;
-        width: 60%;
-        padding: 25px;
-        height: auto;
-    }
-
-    #RecomendacoesTexto h1 {
-        font-size: 25px;
-        margin-top: 50px;
-    }
-
-    #RecomendacoesTexto p {
-        margin-top: 40px;
-        font-size: 15px;
-
-    }
-
-    #Recomendacoes-livros {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .livrosIndicados {
-        width: 283px;
-        height: 390px;
-        margin-top: 20px;
-        background-color: white;
-    }
-
-    .RecomendacoesTitulo1 {
-        margin-left: 55px;
-        color: white;
-        font-size: 30px;
-        padding-top: 100px;
-        text-decoration: none;
-    }
-
-    .RecomendacoesTitulo2 {
-        margin-left: 55px;
-        color: white;
-        font-size: 30px;
-        padding-top: 20px;
-        text-decoration: none;
-        margin-bottom: 15px;
-    }
-
-    #Recomendacoes-videos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .videoIndicados {
-        width: 283px;
-        height: 390px;
-        margin-top: 20px;
-        background-color: white;
-    }
-
-    #tamanho {
-        height: auto;
-    }
-
-    #sobre_nos {
-        /* background-color: rgb(45, 100, 219); */
-        width: 100%;
-        height: auto;
-        display: flex;
-    }
-
-    #sobre_texto {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    #sobre_texto h1 {
-        font-size: 30px;
-        /* padding-left: 20px; */
-        margin-top: 20px;
-        /* background-color: #000; */
-    }
-
-    #sobre_texto p {
-        font-size: 15px;
-        margin: 20px 20px;
-        width: 100%;
-        /* background-color: #15f700; */
-    }
-
-    #sobre_texto h5 {
-        font-size: 30px;
-        padding-left: 20px;
-        margin-top: 10%;
-    }
-
-    #sobre_texto .btn_enviar {
-        width: 50%;
-        padding: 10px;
-        color: #fff;
-        font-size: 25px;
-        border-bottom: none;
-        background-color: #0063F7;
-        cursor: pointer;
-    }
-
-    #comentarios h1 {
-        font-size: 30px;
-        /* background-color: #000; */
-    }
-
-    .comentario_texto {
-        font-size: 11px;
-    }
-
-    footer {
-        background-image: none;
-        background-color: #000;
-    }
-}
-
-@media only screen and (max-width:999px) {
     body {
         overflow-x: hidden;
     }
 
-    article{
+    article {
         background-image: none;
     }
 
@@ -771,36 +529,364 @@ footer {
         color: #fff;
     }
 
-    #sem-conteudo{
-        width: 70%;
+    .logo {
+        width: 50%;
+        /* background-color: #836e13; */
+    }
+
+    #sem-conteudo {
+        width: 20%;
+        /* background-color: #FFD000; */
     }
 
     .mobile-menu {
         display: block;
         z-index: 2;
         margin: auto;
+        /* background-color: #0063F7; */
     }
 
     .menu-links.active {
         transform: translateX(0);
     }
-    
-    .logo img{
-        margin-left: 10px;
-    }
 
-    #inicio{
-        /* background-color: tomato; */
+    #inicio {
+        height: auto;
         flex-direction: column;
     }
 
-    #texto{
+    #texto {
+        width: 100%;
+        text-align: center;
+        /* background-color: aqua; */
+    }
+
+    #texto h1 {
+        font-size: 40px;
+    }
+
+    #texto p {
+        font-size: 15px;
+    }
+
+    #img-inicio {
+        display: none;
+    }
+
+    #Recomendacoes {
+        flex-direction: column;
+        /* background-color: #760000; */
+    }
+
+    #RecomendacoesTexto {
+        width: 100%;
+        text-align: center;
+        /* background-color: #6E716F; */
+    }
+
+    #RecomendacoesTexto h1 {
+        font-size: 40px;
+        margin: 0px;
+        /* background-color: #0063F7; */
+    }
+
+    #RecomendacoesImagem {
+        margin: auto;
+    }
+
+    #Recomendacoes-colecoes {
+        background-color: #007613;
+        height: auto;
+        background-image: none;
+    }
+
+    #Recomendacoes-livros {
+        /* background-color: aqua; */
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .livrosIndicados {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    #Recomendacoes-videos {
+        /* background-color: aqua; */
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .videoIndicados {
+        width: 100%;
+        margin: 0px auto 5px 0px;
+    }
+
+    .RecomendacoesTitulo1{
+        margin: 0px;
+        padding: 0px;
         width: 100%;
         text-align: center;
     }
 
-    #img-inicio{
-        display: none;
+    .RecomendacoesTitulo2{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #sobre_nos {
+        /* background-color: #645d1b; */
+        flex-direction: column;
+    }
+
+    #sobre_texto {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #sobre_texto h1 {
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+        /* background-color: #000; */
+    }
+
+    #sobre_texto p {
+        width: 100%;
+        text-align: center;
+        /* background-color: #FFD000; */
+        margin: auto;
+        font-size: 15px;
+    }
+
+    #sobre_texto h5 {
+        /* background-color: #000; */
+        margin-top: 10px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #sobre_texto input {
+        width: 100%;
+        text-align: center;
+    }
+
+    #sobre_texto .btn_enviar {
+        width: 100%;
+        /* background-color: #760000; */
+    }
+
+    #sobre_texto form {
+        align-items: center;
+        /* background-color: aqua; */
+    }
+
+    #sobre_imagem {
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+
+    #sobre_imagem img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .comentario_texto {
+        font-size: 16px;
+    }
+
+    #comentarios h1 {
+        font-size: 40px;
+    }
+
+    .comentario_container {
+        flex-direction: column;
+    }
+
+    .comentario {
+        width: 80%;
+        margin: auto;
+        /* background-color: #007613; */
+    }
+
+    .footer_texto1 div {
+        width: 100%;
+    }
+
+    #icons {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    @media only screen and (max-width:1024px) {
+        body {
+            overflow-x: hidden;
+        }
+
+        article {
+            background-image: none;
+        }
+
+        .menu-links {
+            position: absolute;
+            right: 0;
+            width: 50vw;
+            height: 92vh;
+            background: #007613;
+            z-index: 1;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in;
+        }
+
+        .menu-links ul {
+            margin-top: 50px;
+            flex-direction: column;
+        }
+
+        .menu-links li {
+            opacity: 0;
+        }
+
+        .menu-links ul li a {
+            color: #fff;
+        }
+
+        #sem-conteudo {
+            width: 70%;
+        }
+
+        .mobile-menu {
+            display: block;
+            z-index: 2;
+            margin: auto;
+        }
+
+        .menu-links.active {
+            transform: translateX(0);
+        }
+
+        .logo img {
+            margin-left: 10px;
+        }
+
+        #inicio {
+            /* background-color: tomato; */
+            flex-direction: column;
+        }
+
+        #texto {
+            width: 100%;
+            text-align: center;
+        }
+
+        #img-inicio {
+            display: none;
+        }
+
+        #Recomendacoes {
+            flex-direction: column;
+        }
+
+        #RecomendacoesTexto {
+            width: 100%;
+            text-align: center;
+        }
+
+        #RecomendacoesImagem {
+            width: 50%;
+            margin: auto;
+        }
+
+        #Recomendacoes-colecoes {
+            /* background-color: #FFD000; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+        }
+
+        #Recomendacoes-livros {
+            /* background-color: aqua; */
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-content: space-evenly;
+        }
+
+        .livrosIndicados {
+            margin: 5px auto;
+        }
+
+        #Recomendacoes-videos {
+            /* background-color: aqua;  */
+            display: grid;
+            grid-template-columns: 50% 50%;
+            justify-content: space-evenly;
+        }
+
+        .videoIndicados {
+            margin: 15px auto;
+        }
+
+        #sobre_nos {
+            /* background-color: #645d1b; */
+            flex-direction: column;
+        }
+
+        #sobre_texto {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        #sobre_texto h1 {
+            width: 100%;
+            text-align: center;
+            /* background-color: #000; */
+        }
+
+        #sobre_texto p {
+            text-align: center;
+            /* background-color: #FFD000; */
+            margin: auto;
+        }
+
+        #sobre_texto h5 {
+            /* background-color: #000; */
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #sobre_texto form {
+            align-items: center;
+            /* background-color: aqua; */
+        }
+
+        #sobre_imagem {
+            width: 100%;
+            padding: 0px;
+            text-align: center;
+        }
+
+        #sobre_imagem img {
+            width: 50%;
+            height: 50%;
+        }
+
+        .comentario_texto {
+            font-size: 16px;
+            /* background-color: #0063F7; */
+        }
+
+        #icons {
+            width: 30%;
+        }
     }
 }
 
