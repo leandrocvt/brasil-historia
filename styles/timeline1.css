@@ -176,6 +176,10 @@ Main Components
   /* these are the left/right arrows to navigate the timeline */
   position: absolute;
   background-color: #007613;
+  margin-left: 5px;
+  /* background-image: url('../img/seta-direita.svg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 1;
   top: 50%;
   bottom: auto;
@@ -201,8 +205,9 @@ Main Components
   /* arrow icon */
   content: '';
   position: absolute;
-  height: 16px;
-  width: 16px;
+  height: 50px;
+  width: 55px;
+  margin: auto;
   left: 50%;
   top: 50%;
   bottom: auto;
@@ -212,7 +217,9 @@ Main Components
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(../img/cd-arrow.svg) no-repeat 0 0;
+  background-color: red;
+  background: url(../img/seta-direita.svg) no-repeat 0 0;
+  background-size: cover;
 }
 .cd-timeline-navigation a.prev {
   left: 0;
@@ -233,7 +240,7 @@ Main Components
   cursor: not-allowed;
 }
 .cd-timeline-navigation a.inactive::after {
-  background-position: 0 -16px;
+  background-position: 0 -50px;
 }
 .no-touch .cd-timeline-navigation a.inactive:hover {
   border-color: #dfdfdf;
