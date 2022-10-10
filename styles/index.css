@@ -52,13 +52,13 @@ header {
 }
 
 #sem-conteudo {
-    width: 13%;
+    width: 25%;
     height: 120px;
     /* background-color: black; */
 }
 
 .menu-links {
-    width: 72%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     /* background-color: aqua; */
